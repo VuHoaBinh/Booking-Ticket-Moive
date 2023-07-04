@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/BaiTapBookingTicket.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bookingMovie">
+        <div class="container">
+            <div class="content col-12">
+                <h1 class=".display-1 ">MOVIE SEAT SELECTION</h1>
+                <h4 class=".display-2"> Iron Man 4 (Earth-11584)</h4>
+                <p class=".display-5"><strong style="color:red;">Iron Man 4 </strong> is a 2016 film set in the Earth-11584 continuity of the Marvel Cinematic Universe. It is the fourth and to date final installment of the Iron Man film series, the fifth film in Phase 3, and
+                    the 20th film overall in the MCU. Robert Downey Jr. returns to play the title role, but Jon Favreau returns to direct the fourth film, replacing Shane Black from Iron Man 3. Though the film was highly regarded by critics and audiences,
+                    it did not make as much money as its immediate predecessor, falling shy of 1 billion dollars at the worldwide box office.</p>
+            </div>
+            <div class="btn-register text-center col-12">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#register"> Booking Ticket</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- form register  -->
+    <div class="modal" id="register">
+        <div class="modal-dialog mw-100 w-50" style="background-color: gray;">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <div class="row">
+                        <h1 class="modal-title col-12 text-center"> Register Ticket</h1>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="">
+                        <fieldset class="row">
+                            <legend class="col-12">Fill The Required Details</legend>
+                            <div class="form-group col-4">
+                                <label for="usr">Full Name:</label> <br>
+                                <input type="text" class="form-control" id="usr">
+                            </div>
+                            <div class="form-group col-4">
+                                <label for="numberSeat">Number of Seat:</label>
+                                <input type="number" class="form-control" id="numberSeat" min="0">
+                            </div>
+                            <div class="form-group col-4">
+                                <label for="time">Select Time:</label>
+                                <select class="form-control" id="time">
+                                    <option>15:00pm</option>
+                                    <option>16:10pm</option>
+                                    <option>17:00pm</option>
+                                    <option>17:50pm</option>
+                                    <option>18:40pm</option>
+                                    <option>19:30pm</option>
+                                    <option>20:20pm</option>
+                                    <option>21:00pm</option>
+                                    <option>21:50pm</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-12">
+                                <label for="date">Date:</label>
+                                <input type="date" class="form-control" id="date">
+                            </div>
+                            <div class="text-center col-12">
+                                <button type="button" class="btn btn-outline-primary">Start Selecting</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <br>
+                    <hr>
+                    <div class="row">
+                        <div class="form-group col-4">
+                            <label for="">
+                                <div style="background-color: green;width: 10px;height: 10px; display: inline-block;"></div>
+                                Selected Seat
+                            </label>
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="">
+                                <div style="background-color: red;width: 10px;height: 10px; display: inline-block;"></div>
+                                Reserved Seat
+                            </label>
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="">
+                                <div style="border: 1.5px solid orange;;width: 10px;height: 10px; display: inline-block;"></div>
+                                Empty Seat
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="gridSeat">
+
+                </div>
+                <div class="modal-footer ">
+                    <button type="button " class="btn btn-danger " data-dismiss="modal ">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
