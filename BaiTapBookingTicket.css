@@ -1,3 +1,4 @@
+@import url(fontawesome-all.min.css);
 @font-face {
     font-family: 'fontGame';
     src: url('../font/Pony.ttf');
@@ -65,30 +66,194 @@ body {
     padding-bottom: 50px;
 }
 
-.modal-content {
-    background-color: red;
+
+/* //////////////////////////////////////////////////////////////// */
+
+#bg:before,
+#bg:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#bg:before {
+    -moz-transition: background-color 2.5s ease-in-out;
+    -webkit-transition: background-color 2.5s ease-in-out;
+    -ms-transition: background-color 2.5s ease-in-out;
+    transition: background-color 2.5s ease-in-out;
+    -moz-transition-delay: 0.75s;
+    -webkit-transition-delay: 0.75s;
+    -ms-transition-delay: 0.75s;
+    transition-delay: 0.75s;
+    background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+    background-size: auto, 256px 256px;
+    background-position: center, center;
+    background-repeat: no-repeat, repeat;
+    z-index: 2;
+}
+
+#bg:after {
+    -moz-transform: scale(1.125);
+    -webkit-transform: scale(1.125);
+    -ms-transform: scale(1.125);
+    transform: scale(1.125);
+    -moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
+    -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
+    -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
+    transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.bookingMovie {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    padding: 4rem 2rem;
+    z-index: 3;
+}
+
+.bookingMovie:before {
+    content: '';
+    display: block;
+}
+
+@media screen and (max-width: 1680px) {
+    #wrapper {
+        padding: 3rem 2rem;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #wrapper {
+        padding: 2rem 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #wrapper {
+        padding: 1rem;
+    }
+}
+
+
+/* container */
+
+.container nav ul {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+    border: solid 1px #ffffff;
+    border-radius: 4px;
+}
+
+.container nav ul li a {
+    display: block;
+    min-width: 7.5rem;
+    height: 2.75rem;
+    line-height: 2.75rem;
+    padding: 0 1.25rem 0 1.45rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+    border-bottom: 0;
+}
+
+.container nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+.container nav ul li a:active {
+    background-color: rgba(255, 255, 255, 0.175);
+}
+
+
+/* article */
+
+#main article {
+    -moz-transform: translateY(0.25rem);
+    -webkit-transform: translateY(0.25rem);
+    -ms-transform: translateY(0.25rem);
+    transform: translateY(0.25rem);
+    -moz-transition: opacity 0.325s ease-in-out, -moz-transform 0.325s ease-in-out;
+    -webkit-transition: opacity 0.325s ease-in-out, -webkit-transform 0.325s ease-in-out;
+    -ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
+    transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
+    padding: 4.5rem 2.5rem 1.5rem 2.5rem;
+    position: relative;
+    width: 40rem;
+    max-width: 100%;
+    background-color: rgba(27, 31, 34, 0.85);
+    border-radius: 4px;
+    opacity: 0;
+}
+
+#main article.active {
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+/* //////////////////////////////////////////////////////////////// */
+
+.gridSeat {
+    border: 1px solid brown;
+}
+
+article {
+    color: white;
 }
 
 .ghe {
     border: 3px solid orange;
-    width: 45px;
-    height: 35px;
+    width: 10px;
+    height: 10px;
     font-size: 12px;
-    margin-left: 2%;
-    margin-bottom: 1%;
+    margin-left: 2px;
+    /* margin-bottom: -2px; */
     border-radius: 5px;
+    /* background-color: orange; */
 }
 
 .rowNumber {
     /* font-size: 25px; */
-    width: 45px;
-    height: 35px;
-    background: none;
+    width: 10px;
+    height: 10px;
+    /* background: none; */
     border: none;
-    margin-left: 2%;
+    margin-left: 6px;
     margin-bottom: 1%;
-    font-size: 30px;
-    color: yellow;
+    font-size: 18px;
+    color: black;
 }
 
 .firstChar {

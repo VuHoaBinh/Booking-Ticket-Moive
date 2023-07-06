@@ -20,8 +20,8 @@
 </head>
 
 <body>
-    <div class="bookingMovie">
-        <div class="container">
+    <div class="bookingMovie" id="wrapper">
+        <div class="container" id="header">
             <div class="content col-12">
                 <h1 class=".display-1 ">MOVIE SEAT SELECTION</h1>
                 <h4 class=".display-2"> Iron Man 4 (Earth-11584)</h4>
@@ -30,22 +30,16 @@
                     it did not make as much money as its immediate predecessor, falling shy of 1 billion dollars at the worldwide box office.</p>
             </div>
             <div class="btn-register text-center col-12">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#register"> Booking Ticket</button>
+                <a href="#btn-booking"><button type="button" class="btn btn-success"> Booking Ticket</button></a>
             </div>
+
         </div>
-    </div>
-
-
-    <!-- form register  -->
-    <div class="modal" id="register">
-        <div class="modal-dialog mw-100 w-50" style="background-color: gray;">
-            <div class="modal-content">
-
+        <div id="main">
+            <article id="btn-booking">
                 <div class="modal-header">
                     <div class="row">
                         <h1 class="modal-title col-12 text-center"> Register Ticket</h1>
                     </div>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
                 <div class="modal-body">
@@ -105,17 +99,202 @@
                             </label>
                         </div>
                     </div>
-                </div>
-                <div class="gridSeat">
+                    <div class="gridSeat">
+                        <div class="d-flex flex-wrap text-center">
+                            <div class="p-2 rowNumber"></div>
+                            <div class="p-2 rowNumber">1</div>
+                            <div class="p-2 rowNumber">2</div>
+                            <div class="p-2 rowNumber">3</div>
+                            <div class="p-2 rowNumber">4</div>
+                            <div class="p-2 rowNumber">5</div>
+                            <div class="p-2 rowNumber"></div>
+                            <div class="p-2 rowNumber">6</div>
+                            <div class="p-2 rowNumber">7</div>
+                            <div class="p-2 rowNumber">8</div>
+                            <div class="p-2 rowNumber">9</div>
+                            <div class="p-2 rowNumber">10</div>
+                            <div class="p-2 rowNumber">11</div>
+                            <div class="p-2 rowNumber">12</div>
+                        </div>
+                        <div class="d-flex flex-wrap text-center">
+                            <div class="p-2">A</div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                        </div>
+                        <div class="d-flex flex-wrap text-center">
+                            <div class="p-2">B</div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                        </div>
+                        <div class="d-flex flex-wrap text-center">
+                            <div class="p-2">C</div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                        </div>
+                        <div class="d-flex flex-wrap text-center">
+                            <div class="p-2">D</div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                        </div>
+                        <div class="d-flex flex-wrap text-center">
+                            <div class="p-2">E</div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                        </div>
+                        <div class="d-flex flex-wrap"></div>
+                        <!-- // -->
+                        <div class="d-flex flex-wrap text-center">
+                            <div class="p-2">F</div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                        </div>
+                        <div class="d-flex flex-wrap text-center">
+                            <div class="p-2">G</div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                        </div>
+                        <div class="d-flex flex-wrap text-center">
+                            <div class="p-2">H</div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                        </div>
+                        <div class="d-flex flex-wrap text-center">
+                            <div class="p-2">I</div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                        </div>
+                        <div class="d-flex flex-wrap text-center">
+                            <div class="p-2">J</div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                            <div class="p-2 ghe"></div>
+                        </div>
 
-                </div>
-                <div class="modal-footer ">
-                    <button type="button " class="btn btn-danger " data-dismiss="modal ">Close</button>
+
+
+                    </div>
                 </div>
 
-            </div>
+            </article>
         </div>
     </div>
+    <div id="bg"></div>
+
+
 </body>
+<script src="/jquery.min.js"></script>
+<script src="/browser.min.js"></script>
+<script src="/breakpoints.min.js"></script>
+<script src="/util.js"></script>
+<script src="/main.js"></script>
 
 </html>
