@@ -12,7 +12,6 @@
 body {
     background-image: url("/bgmovie.jpg");
     background-repeat: no-repeat;
-    width: 100%;
 }
 
 .bookingMovie {
@@ -89,7 +88,6 @@ body {
     -webkit-transition-delay: 0.75s;
     -ms-transition-delay: 0.75s;
     transition-delay: 0.75s;
-    background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
     background-size: auto, 256px 256px;
     background-position: center, center;
     background-repeat: no-repeat, repeat;
@@ -205,9 +203,9 @@ body {
     -webkit-transition: opacity 0.325s ease-in-out, -webkit-transform 0.325s ease-in-out;
     -ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
     transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
-    padding: 4.5rem 2.5rem 1.5rem 2.5rem;
+    padding: 1rem 2.5rem 1.5rem 2.5rem;
     position: relative;
-    width: 40rem;
+    width: 47rem;
     max-width: 100%;
     background-color: rgba(27, 31, 34, 0.85);
     border-radius: 4px;
@@ -227,6 +225,8 @@ body {
 
 .gridSeat {
     border: 1px solid brown;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto;
 }
 
 article {
@@ -235,13 +235,13 @@ article {
 
 .ghe {
     border: 3px solid orange;
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 20px;
     font-size: 12px;
-    margin-left: 2px;
-    /* margin-bottom: -2px; */
+    margin-left: 5px;
     border-radius: 5px;
-    /* background-color: orange; */
+    background-color: white;
+    margin-bottom: 2px;
 }
 
 .rowNumber {
@@ -251,9 +251,9 @@ article {
     /* background: none; */
     border: none;
     margin-left: 6px;
-    margin-bottom: 1%;
+    margin-bottom: 16px;
     font-size: 18px;
-    color: black;
+    color: white;
 }
 
 .firstChar {
@@ -266,11 +266,12 @@ article {
     border-bottom: 50px solid rgb(255, 159, 95);
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
-    height: 100;
-    width: 80%;
+    width: 50%;
     filter: drop-shadow(4px 30px 20px rgba(255, 255, 255, 0.5));
     font-size: 25px;
     color: #fff;
+    margin-left: 170px;
+    margin-top: 5px;
 }
 
 .gheDuocChon {
