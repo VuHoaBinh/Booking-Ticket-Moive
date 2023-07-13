@@ -113,12 +113,6 @@
 
     };
 
-    // $body.on('click', function(event) {
-    //     if ($body.hasClass('is-article-visible')) {
-    //         $main._hide(true);
-    //     }
-    // });
-
     $window.on('hashchange', function(event) {
         if (location.hash == '' ||
             location.hash == '#') {
